@@ -13,6 +13,7 @@ module.exports = {
     'no-debugger': 'warn',
     'arrow-parens': ['error', 'as-needed'],
     'function-paren-newline': ['error', 'consistent'],
+    'no-shadow': 'off',
     'no-bitwise': ['error', {
       allow: ['~'],
     }],
@@ -24,7 +25,7 @@ module.exports = {
     }],
     'max-len': ['error', 100, 2, {
       ignoreUrls: true,
-      ignoreComments: false,
+      ignoreComments: true,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
@@ -75,7 +76,8 @@ module.exports = {
       shorthandFirst: true,
       noSortAlphabetically: false,
       callbacksLast: true,
-      reservedFirst: true
+      reservedFirst: true,
+      ignoreCase: true
     }],
     'react/sort-prop-types': ['error', {
       callbacksLast: true,
