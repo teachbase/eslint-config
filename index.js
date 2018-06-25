@@ -23,13 +23,7 @@ module.exports = {
     'no-empty': ['error', {
       allowEmptyCatch: true,
     }],
-    'max-len': ['error', 100, 2, {
-      ignoreUrls: true,
-      ignoreComments: true,
-      ignoreRegExpLiterals: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
+    'max-len': ['error', 120, 2],
     'object-curly-newline': ['error', {
       ObjectExpression: {
         minProperties: 4,
