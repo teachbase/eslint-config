@@ -120,14 +120,6 @@ module.exports = {
       "comma"
     ],
     "flowtype/no-weak-types": "error",
-    "flowtype/require-parameter-type": "error",
-    "flowtype/require-return-type": [
-      "error",
-      "always",
-      {
-        "annotateUndefined": "never"
-      }
-    ],
     "flowtype/require-valid-file-annotation": ["error", "never", { "annotationStyle": "block" }],
     "flowtype/semi": [
       "error",
