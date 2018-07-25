@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: ['airbnb'],
-  plugins: ['compat', 'flowtype'],
+  extends: ['airbnb', 'prettier'],
+  plugins: ['compat', 'flowtype', 'prettier'],
   env: {
     browser: true,
     es6: true,
@@ -23,17 +23,17 @@ module.exports = {
     'no-empty': ['error', {
       allowEmptyCatch: true,
     }],
-    "operator-linebreak": ["error", "after"],
-    "react/destructuring-assignment": "off",
-    "react/button-has-type": "off", // https://github.com/yannickcr/eslint-plugin-react/issues/1846
-    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "react/jsx-one-expression-per-line": "off",
-    "max-len": ["error", 120, 2, {
-      "ignoreUrls": true,
-      "ignoreComments": false,
-      "ignoreRegExpLiterals": false,
-      "ignoreStrings": false,
-      "ignoreTemplateLiterals": false
+    'operator-linebreak': ['error', 'after'],
+    'react/destructuring-assignment': 'off',
+    'react/button-has-type': 'off', // https://github.com/yannickcr/eslint-plugin-react/issues/1846
+    'lines-between-class-members': ['error', 'always', { 'exceptAfterSingleLine': true }],
+    'react/jsx-one-expression-per-line': 'off',
+    'max-len': ['error', 120, 2, {
+      'ignoreUrls': true,
+      'ignoreComments': false,
+      'ignoreRegExpLiterals': false,
+      'ignoreStrings': false,
+      'ignoreTemplateLiterals': false
     }],
     'object-curly-newline': ['error', {
       ObjectExpression: {
@@ -56,7 +56,7 @@ module.exports = {
 
     'compat/compat': 'error',
 
-    "import/no-extraneous-dependencies": ["error", {
+    'import/no-extraneous-dependencies': ['error', {
       devDependencies: ['**/*.test.js', '**/*.spec.js', '**/*.config.js'],
       optionalDependencies: false,
       peerDependencies: true
@@ -102,47 +102,49 @@ module.exports = {
     }],
     'react/require-default-props': 'off',
 
-    "flowtype/boolean-style": [
-      "error",
-      "boolean"
+    'flowtype/boolean-style': [
+      'error',
+      'boolean'
     ],
-    "flowtype/define-flow-type": "error",
-    "flowtype/delimiter-dangle": [
-      "error",
-      "always-multiline"
+    'flowtype/define-flow-type': 'error',
+    'flowtype/delimiter-dangle': [
+      'error',
+      'always-multiline'
     ],
-    "flowtype/generic-spacing": [
-      "error",
-      "never"
+    'flowtype/generic-spacing': [
+      'error',
+      'never'
     ],
-    "flowtype/no-primitive-constructor-types": "error",
-    "flowtype/no-types-missing-file-annotation": "error",
-    "flowtype/object-type-delimiter": [
-      "error",
-      "comma"
+    'flowtype/no-primitive-constructor-types': 'error',
+    'flowtype/no-types-missing-file-annotation': 'error',
+    'flowtype/object-type-delimiter': [
+      'error',
+      'comma'
     ],
-    "flowtype/no-weak-types": "error",
-    "flowtype/require-valid-file-annotation": ["error", "never", { "annotationStyle": "block" }],
-    "flowtype/semi": [
-      "error",
-      "always"
+    'flowtype/no-weak-types': 'error',
+    'flowtype/require-valid-file-annotation': ['error', 'never', { 'annotationStyle': 'block' }],
+    'flowtype/semi': [
+      'error',
+      'always'
     ],
-    "flowtype/space-after-type-colon": [
-      "error",
-      "always"
+    'flowtype/space-after-type-colon': [
+      'error',
+      'always'
     ],
-    "flowtype/space-before-generic-bracket": [
-      "error",
-      "never"
+    'flowtype/space-before-generic-bracket': [
+      'error',
+      'never'
     ],
-    "flowtype/space-before-type-colon": [
-      "error",
-      "never"
+    'flowtype/space-before-type-colon': [
+      'error',
+      'never'
     ],
-    "flowtype/union-intersection-spacing": [
-      "error",
-      "always"
+    'flowtype/union-intersection-spacing': [
+      'error',
+      'always'
     ],
-    "flowtype/use-flow-type": "warn",
+    'flowtype/use-flow-type': 'warn',
+    'prettier/prettier': 'error',
+    'react/jsx-wrap-multilines': 'off',
   },
 };
