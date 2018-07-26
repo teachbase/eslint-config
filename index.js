@@ -12,7 +12,6 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'arrow-parens': ['error', 'as-needed'],
-    'function-paren-newline': ['error', 'consistent'],
     'no-shadow': 'off',
     'no-bitwise': ['error', {
       allow: ['~'],
@@ -23,7 +22,6 @@ module.exports = {
     'no-empty': ['error', {
       allowEmptyCatch: true,
     }],
-    'operator-linebreak': ['error', 'after'],
     'react/destructuring-assignment': 'off',
     'react/button-has-type': 'off', // https://github.com/yannickcr/eslint-plugin-react/issues/1846
     'lines-between-class-members': ['error', 'always', { 'exceptAfterSingleLine': true }],
