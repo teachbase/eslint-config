@@ -101,6 +101,9 @@ module.exports = {
       extensions: ['.js'],
     }],
     'react/require-default-props': 'off',
+    'react/default-props-match-prop-types': ["error", {
+      allowRequiredDefaults: true,
+    }],
 
     "flowtype/boolean-style": [
       "error",
