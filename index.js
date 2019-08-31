@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   extends: ['airbnb'],
-  plugins: ['compat', 'flowtype'],
+  plugins: ['flowtype'],
   env: {
     browser: true,
     es6: true,
@@ -53,8 +53,6 @@ module.exports = {
         consistent: true
       },
     }],
-
-    'compat/compat': 'error',
 
     "import/no-extraneous-dependencies": ["error", {
       devDependencies: ['**/*.test.js', '**/*.spec.js', '**/*.config.js'],
